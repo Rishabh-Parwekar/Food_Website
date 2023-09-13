@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Pizza House">
+    <title>Pizza House</title>
+    <link rel="icon" href="logo1.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        @media only screen and (max-width:670px) {
+            /* Navigation */
+            .navbar{
+                flex-direction: column;
+            }
+            .navbar ul li a {
+                font-size: 15px;
+                padding: 0px 5px;
+                margin-right: 1px;
+                border-radius: 12px;
+                padding-bottom: 7px;
+            }
+            .logo{
+                font-size: 16px;
+                padding: 2px 5px;
+            }
+            /* Home */
+            #home{
+                height: 290px;
+                padding: 3px 20px;
+            }
+            #home::before{
+                position: absolute;
+                height: 370px;
+            }
+            .h-primary{
+                font-size: 18px;
+                margin:5px;
+                padding: 3px;
+            }
+            #home p{
+                font-size: 13px;
+            }
+            .btn{
+                padding: 2px 8px;
+                margin: 8px;
+                font-size: 12px;
+            }
+            .h1-primary span{
+                font-size: 24px; 
+            }
+            .h1-primary h3{
+                font-size: 24px;
+                margin-bottom: 11px;
+            }
+            /* Product */
+            .item{
+                display: inline;
+            }
+            .item .item-1{
+                padding: 19px;
+                margin: 12px 3px;
+                border-radius: 20px;
+            }
+            .item .item-1 img{
+                width: 220px;
+                height: 220px;
+                border-radius: 10px;
+            }
+            .order-btn{
+                padding: 6px 6px ;
+                border-radius: 14px;
+                font-size: 14
+            }
+            .h-secondary{
+               font-size: 28px;
+               font-weight: 800;
+            }
+            /* About */
+            #about{
+                display: flex;
+                margin-top: 8px;
+                width: 100%;
+                height: 360px;
+            }
+            .about-info{
+                display: flex;
+                width: 100%;
+                height: 350px;
+                text-align: center;
+                justify-content: center;
+                margin: 1px 0px;
+            }
+            .about-info span{
+                font-size: 17px; 
+            }
+            .about-img img{
+                display: flex;
+                width: 100%;
+                height: 350px;
+                
+            }
+            .about-info h1{
+                font-size: 15px;
+                padding: 2px;
+            }
+            .about-info h5{
+                padding: 0px;
+                font-size: 10px;
+                margin-left: 4px;
+                text-align-last: center;
+            }
+            .about-info .about-btn{
+                margin: 2px 0px;
+                padding: 4px 6px;
+                border-radius: 15px;
+                font-size: 8px;
+            }
+            /* Blog */
+            .blog{
+                margin: 10px;
+            }
+            .center{
+                margin: 0px 0px;
+            }
+            .blog-container{
+                margin: 0px 0px;
+                padding: 12px;
+                width: 100%;
+            }
+            .blog-img{
+                width: 100%;
+                height: auto;
+            }
+            .blog-img img{
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                object-position: center;
+            }
+            .blog-text span{
+                font-size: 15px;
+            }
+            .blog-text b{
+                font-size: 9.1px;
+            }
+            .blog-title{
+                font-size: 12px;
+                font-weight: bold;
+            }
+            .read{
+                font-size: 18px;
+            }
+            /* Footer */
+            #footer{
+                padding: 35px;
+            }
+            .container{
+                max-width: 565;
+            }
+            .footer-col{
+                padding: 0 8px;
+            }
+            .footer-col h4{
+                font-size: 11px;
+                margin-bottom:10px ;
+                font-weight: 400px;
+            }
+            .footer-col ul li a{
+                font-size: 9px;
+                font-weight: 200px;
+            }
+            .footer-col .social-links a{
+                background-color: rgb(72,70,70);
+                height: 22px;
+                width: 22px;
+                margin: 0 5px 5px 0;
+                line-height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="logo">Pizza<span>House</span></h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul> 
+    </div>
+    <div id="home">
+        <h1 class="h-primary">Delicious Pizza For Every One</h1>
+        <p>Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning</p>
+        <button class="btn">Explore Menu</button>
+    </div>
+    <div id="product">
+        <div class="h1-primary">
+            <span>Most Popular</span>
+            <h3>Our Exclusive Pizza</h3> 
+        </div>
+        <div class="item">
+            <div class="item-1">
+              <img src="order1.jpg" alt="">
+              <h2 class="h-secondary center">Pizza Margherita</h2>
+              <button class="order-btn">Order Now</button>
+            </div>
+            <div class="item-1">
+              <img src="order2.jpg" alt="">
+              <h2 class="h-secondary center">Quick Tomato Pizzas</h2>
+              <button class="order-btn">Order Now</button>
+            </div>
+            <div class="item-1">
+              <img src="order3.jpg" alt="">
+              <h2 class="h-secondary center">Cheesy Vegetable Pizza</h2>
+              <button class="order-btn">Order Now</button>
+            </div>
+            <div class="item-1">
+                <img src="order4.jpg" alt="">
+              <h2 class="h-secondary center">Tandoori Paneer Pizza</h2>
+              <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="about-img">
+            <img src="about.jpg" alt="">
+        </div>
+        <div class="about-info">
+            <span>Fresh & Delicious</span>
+            <h1 class="h-secondary sec">A Simple Way to Eating Delicious</h1>
+            <h5>Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning  laboris nisi ufsit aliquip ex ea commodo conse quat is aute irure, quis nostrud exer.</h5>
+            <button class="about-btn">Our Story</button>
+        </div>
+    </div>
+    <div id="blog">
+        <div class="h1-primary center">
+            <span>My Recent Post</span>
+            <h3>My Blog</h3> 
+        </div>
+            <div class="blog-container">
+                <div class="blog-img">
+                    <img src="blog.jpg" alt="">
+                </div>   
+                <div class="blog-text">
+                    <span>05 july 2023/Dessert Pizzas</span>
+                    <a href="" class="blog-title">Eating into fast food restaurants market share for takeout</a>
+                    <b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. voluptas, nobis culpa possimus,<br> optio dolorum voluptatum vero ea maxime, in quod iusto laborum quae quia. Fugit, optio.</b>
+                    <a href="" class="read">Read More</a>
+                </div>
+            </div>
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="">about us</a></li>
+                            <li><a href="">our services</a></li>
+                            <li><a href="">privacy policy</a></li>
+                            <li><a href="">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Online order</h4>
+                        <ul>
+                            <li><a href="">faq</a></li>
+                            <li><a href="">shipping</a></li>
+                            <li><a href="">return</a></li>
+                            <li><a href="">order status</a></li>
+                            <li><a href="">payment option</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <ul>
+                            <li><a href="">normal pizza</a></li>
+                            <li><a href="">veg pizza</a></li>
+                            <li><a href="">non-veg pizza</a></li>
+                            <li><a href="">dubble pizza</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online order</h4>
+                        <div class="social-links">
+                         <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                         <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                         <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                         <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+            
+            
+    </div>
+</body>
+</html>
